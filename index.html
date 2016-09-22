@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Exercise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      body {
+        background-color: slateblue;
+      }
+      .wrapper {
+        background-color: goldenrod;
+        border-radius: 5px;
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div class="text-center">
+        <h1>Survey</h1>
+      </div>
+      <form action="submit.php" method="post">
+        <div class="form-group">
+          <label for="">What is your name?</label>
+          <input class="form-control" type="text" name="name" value="">
+        </div>
+        <div class="form-group">
+          <label for="">What is your gender?</label>
+          <div class="radio">
+            <label for="">
+              <input type="radio" name="gender" value="male">
+              Male
+            </label>
+          </div>
+          <div class="radio">
+            <label for="">
+              <input type="radio" name="gender" value="female">
+              Female
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">What is your password?</label>
+          <input class="form-control" type="password" name="password" value="">
+        </div>
+        <div class="form-group">
+          <label for="">Check all the animals that you like:</label>
+          <div class="checkbox">
+            <label for="">
+              <input type="checkbox" name="pig" value="yes">
+              Pig
+            </label>
+          </div>
+          <div class="checkbox">
+            <label for="">
+              <input type="checkbox" name="horse" value="yes">
+              Horse
+            </label>
+          </div>
+          <div class="checkbox">
+            <label for="">
+              <input type="checkbox" name="monkey" value="yes">
+              Monkey
+            </label>
+          </div>
+          <div class="checkbox">
+            <label for="">
+              <input type="checkbox" name="turtle" value="yes">
+              Turtle
+            </label>
+          </div>
+          <div class="checkbox">
+            <label for="">
+              <input type="checkbox" name="donkey" value="yes">
+              Donkey
+            </label>
+          </div>
+          <div class="checkbox">
+            <label for="">
+              <input type="checkbox" name="giraffe" value="yes">
+              Giraffe
+            </label>
+          </div>
+          <div class="checkbox">
+            <label for="">
+              <input type="checkbox" name="snake" value="yes">
+              Snake
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">Which operating system do you use?</label>
+          <select class="form-control" name="os">
+            <option value="windows">Windows</option>
+            <option value="osx">OSX</option>
+            <option value="linux">Linux</option>
+            <option value="plan9">Plan9</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="">Do you have any questions?</label>
+          <textarea class="form-control" name="questions" rows="8" cols="40"></textarea>
+        </div>
+        <div class="form-group">
+          <input class="form-control btn btn-success" type="submit" name="action" value="Submit">
+        </div>
+      </form>
+    </div>  <!-- END OF CONTAINER DIV -->
+
+  </body>
+</html>
